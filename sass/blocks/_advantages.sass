@@ -1,0 +1,62 @@
+.advantages
+    display: flex
+    justify-content: center
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__item
+        display: grid
+        grid-template-columns: 280px 280px 280px 280px
+        grid-column-gap: 20px
+        // display: flex
+        // justify-content: space-between
+        // flex-direction: row
+.text
+    &-h3
+        font-family: Arial
+        font-style: normal
+        font-weight: 700
+        font-size: 36px
+        line-height: 41px
+        margin-top: 30px
+        margin-bottom: 30px
+
+.component
+    padding-top: 5px
+    display: flex
+    align-items: center
+    flex-direction: column
+    width: 280px
+    height: 194px
+    &__img
+        margin-top: 0
+        height: 58px
+        width: 58px
+        margin-bottom: 15px
+        &-one
+            width: 70px
+        &-two
+            width: 58px
+        &-three
+            width: 58px
+        &-four
+            width: 89px
+
+    &-header
+        margin-bottom: 10px
+        font-family: Arial
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 11px
+        color: $font-black
+    &-description
+        margin-top: 0
+        text-align: center
+        font-family: Arial
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 15px
+        color: $font-black

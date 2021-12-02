@@ -1,0 +1,41 @@
+.catalog
+    display: flex
+    justify-content: center
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &-wrapper
+        &__one
+            display: grid
+            grid-auto-flow: column
+            grid-column-gap: 27px
+            margin-bottom: 15px
+        &__two
+            display: grid
+            grid-auto-flow: column
+            grid-column-gap: 27px
+    &__button
+        color: $main-gray
+        background: none
+        border: 1px solid $main-gray
+        border-radius: 3px
+        padding: 8px 13px 8px 13px
+        font-family: Arial
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 14px
+        &:hover
+            background: $main-pink
+            transition: all 0.5s ease
+            color: $main-white
+            border: none
+        &-one
+            width: 128px
+        &-two
+            width: 120px
+        &-three
+            width: 159px
+        &-four
+            width: 138px
