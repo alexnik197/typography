@@ -382,6 +382,11 @@ template {
 }
 
 .header-wrapper {
+  width: 1180px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,7 +462,6 @@ template {
   height: 28px;
   border-radius: 7px;
   border: none;
-  font-family: Arial;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -508,7 +512,6 @@ template {
 }
 
 .text__h2 {
-  font-family: arial;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -519,7 +522,6 @@ template {
 }
 
 .text__h3 {
-  font-family: Arial;
   font-style: normal;
   font-weight: normal;
   margin-top: 0;
@@ -533,7 +535,6 @@ template {
   margin-top: 8px;
   margin-bottom: 0;
   width: 654px;
-  font-family: arial;
   font-style: regular;
   font-weight: 300;
   font-size: 18px;
@@ -548,7 +549,6 @@ template {
   background: #FF005C;
   border: none;
   border-radius: 10px;
-  font-family: arial;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -581,18 +581,17 @@ template {
 .advantages__item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 280px 280px 280px 280px;
-      grid-template-columns: 280px 280px 280px 280px;
+  -ms-grid-columns: 280px 280px 280px;
+      grid-template-columns: 280px 280px 280px;
   grid-column-gap: 20px;
 }
 
 .text-h3 {
-  font-family: Arial;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 41px;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 30px;
 }
 
@@ -631,13 +630,8 @@ template {
   width: 58px;
 }
 
-.component__img-four {
-  width: 89px;
-}
-
 .component-header {
   margin-bottom: 10px;
-  font-family: Arial;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -648,7 +642,6 @@ template {
 .component-description {
   margin-top: 0;
   text-align: center;
-  font-family: Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -699,10 +692,9 @@ template {
   border: 1px solid #323232;
   border-radius: 3px;
   padding: 8px 13px 8px 13px;
-  font-family: Arial;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
 }
 
@@ -711,21 +703,21 @@ template {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #F5F5F5;
-  border: none;
+  border-color: transparent;
 }
 
 .catalog__button-one {
-  width: 128px;
+  width: 141px;
 }
 
 .catalog__button-two {
-  width: 120px;
+  width: 135px;
 }
 
 .catalog__button-three {
-  width: 159px;
+  width: 161px;
 }
 
 .catalog__button-four {
-  width: 138px;
+  width: 165px;
 }
