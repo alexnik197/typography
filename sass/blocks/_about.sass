@@ -8,9 +8,6 @@
         height: 100%
         object-fit: cover
         position: relative
-    &__container
-        position: absolute
-        height: inherit
     &-information
         height: 100%
         display: flex
@@ -18,24 +15,6 @@
         &__text
             padding: 0
             margin-bottom: 0
-
-.text
-    &__h2
-        font-style: normal
-        font-weight: bold
-        font-size: 48px
-        line-height: 55px
-        margin-top: 0
-        margin-bottom: 0
-        color: $main-white
-    &__h3
-        font-style: normal
-        font-weight: normal
-        margin-top: 0
-        margin-bottom: 0
-        font-size: 36px
-        line-height: 41px
-        color: $main-pink
     &__description
         margin-top: 8px
         margin-bottom: 0
@@ -45,6 +24,15 @@
         font-size: 18px
         line-height: 105%
         color: $main-white
+.container-img
+    position: absolute
+.container-header
+    padding-top: 30px
+    padding-bottom: 50px
+    width: 1180px
+    display: flex
+    flex-direction: column
+    justify-content: center
 .button
     &__main
         margin-top: 20px
