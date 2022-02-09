@@ -4,7 +4,79 @@
     flex-direction: column
     align-items: center
     &__header
+        position: relative
+        margin-bottom: 30px
         display: flex
         flex-direction: column
         justify-content: center
         align-items: center
+.reviews
+    display: flex
+    justify-content: space-between
+    &__container
+        margin-left: 20px
+        display: flex
+        flex-direction: column
+        padding: 15px 12px 10px 12px
+        width: 180px
+        height: 261px
+        border: 1px solid #2B2B2B
+        box-sizing: border-box
+        box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.25)
+        &-description
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 14px
+    &__name
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 14px
+.container
+    &-wrapper
+        display: flex
+        display: flex
+        align-items: center
+        flex-direction: column
+        min-height: 208px
+        min-height: 208px
+.horizontal-line
+    border: 1px solid #2B2B2B
+    margin-bottom: 0
+.pseudo-element
+    margin-bottom: 20px
+    display: flex
+    justify-content: center
+    top: 0
+    width: 116px
+    height: 6px
+.button
+    &__review
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 30px
+        width: 331px
+        height: 44px
+        background: none
+        border: 1px solid $main-gray
+        border-radius: 10px
+        font-style: normal
+        font-weight: 600
+        font-size: 24px
+        line-height: 28px
+        color: $font-black
+        box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.25)
+        cursor: pointer
+        &:hover
+            background: $main-pink
+            transition: all 0.5s ease
+            color: $main-white
+            border-color: transparent
+.text
+    &__h2
+        &-review
+            margin-bottom: 10px
