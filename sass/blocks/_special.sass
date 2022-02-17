@@ -1,0 +1,91 @@
+.special
+    padding-top: 30px
+    padding-bottom: 50px
+    position: relative
+    height: 305px
+    display: flex
+    justify-content: center
+    background-image: url(../img/special-background.jpg)
+    background-repeat: no-repeat
+    block-size: cover
+    width: 100%
+    height: 100%
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        height: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(50, 50, 50, 0.9)
+        backdrop-filter: blur(4px)
+    &-information
+        z-index: 100
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__text
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+            padding: 0
+            margin-bottom: 0
+    &__description
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 654px
+        font-style: regular
+        font-weight: 300
+        font-size: 18px
+        line-height: 105%
+        color: $main-white
+        margin-top: 0
+        margin-bottom: 25px
+.sp-text
+    &__h1
+        color: $main-white
+        font-weight: bold
+        font-size: 48px
+        line-height: 55px
+        text-align: center
+        margin-bottom: 5px
+        margin-top: 0
+    &__h2-pink
+        margin-top: 0
+        margin-bottom: 15px
+        color: $main-pink
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 36px
+        line-height: 41px
+.container-img
+    position: absolute
+.container-header
+    padding-top: 30px
+    padding-bottom: 50px
+    width: 1180px
+    display: flex
+    flex-direction: column
+    justify-content: center
+.button
+    &__main
+        &-two
+            margin-top: 0
+            width: 331px
+            height: 44px
+            background: $main-pink
+            border: none
+            border-radius: 10px
+            font-style: normal
+            font-weight: 600
+            font-size: 24px
+            line-height: 28px
+            &:hover
+                transition: all 1.0s ease
+                border: 1px solid $main-white
