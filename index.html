@@ -15,7 +15,7 @@
                     <span class="logo-text">ИнфоКемерово</span>
                 </a>
                 <ul class="header-list">
-                    <li class="header-list__number header-list__el">+7 (913) 308-20-24</li>
+                    <li class="header-list__number">+7 (913) 308-20-24</li>
                     <li><a href="" class="header-list__el">Почему мы</a></li>
                     <li><a href="" class="header-list__el">Отзывы</a></li>
                     <li><a href="" class="header-list__el">Контакты</a></li>
@@ -162,18 +162,21 @@
     </div>
     <!-- .feedback -->
     <div class="special">
-        <div class="special-information">
-            <div class="special-information__text">
-                <h1 class="sp-text__h1">Специальное предложение</h1>
-            <h2 class="sp-text__h2-pink">Скидка 3%</h2>
-            <div>
-                <p class="special__description">При подписке и размещении любого поста из нашего instagram</p>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/special-background.jpg">
+            <div class="special-information">
+                <div class="special-information__text">
+                    <h1 class="sp-text__h1">Специальное предложение</h1>
+                <h2 class="sp-text__h2-pink">Скидка 3%</h2>
+                <div>
+                    <p class="special__description">При подписке и размещении любого поста из нашего instagram</p>
+                </div>
+                </div>
+                <!-- /.special-information__text -->
+                <button class="button button__main button__main-two">Перейти в профиль</button>
             </div>
-            </div>
-            <!-- /.special-information__text -->
-            <button class="button button__main button__main-two">Перейти в профиль</button>
+            <!-- /.special-information -->
         </div>
-        <!-- /.special-information -->
+        <!-- .parallax-window -->
     </div>
     <!-- .special -->
     <div class="contacts">
@@ -212,11 +215,52 @@
     </div>
     <!-- /.contacts -->
     <div class="footer">
-        <div class="container">
-            
+        <div class="container-footer">
+            <div class="content-wrapper">
+                <div class="footer-logo__wrapper">
+                    <div class="footer-logo">
+                        <img src="/img/svg/logo-footer.svg" alt="logo" class="footer-logo__img">
+                        <span class="footer-logo__title">ИнфоКемерово</span>
+                    </div>
+                    <!-- /.logo-footer -->
+                </div>
+                <!-- /.footer-logo__wrapper -->
+                <div class="footer-contacts">
+                    <span class="footer-title">Контактная информация</span>
+                    <p class="footer-contacts__description">ООО «Инфо-Кемерово», <b>650021</b>, г. Кемерово, ул Предзаводская 10в<br>
+                    ИНН 420524318891, ОГРНИП 319420500101560</p>
+                    <a href="#" class="footer-contacts__policy">Политика конфиденциальности</a>
+                </div>
+                <!-- /.footer-contacts -->
+                <div class="footer-menu">
+                    <span class="footer-title">Меню сайта</span>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">Главная</a></li>
+                        <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">Отзывы</a></li>
+                        <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">О компании</a></li>
+                        <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">Акция</a></li>
+                        <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">Каталог</a></li>
+                        <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">Контакты</a></li>
+                    </ul>
+                </div>
+                <!-- /.footer-menu -->
+                <div class="footer-social">
+                    <span class="footer-title">Социальные сети</span>
+                    <div class="footer-social__links">
+                        <a href="" class="footer-social__ico-link"><img src="/img/svg/inst.svg" alt="logo instagram" class="footer-social__ico"></a>
+                        <a href="" class="footer-social__ico-link"><img src="/img/svg/whatsapp.svg" alt="logo instagram" class="footer-social__ico"></a>
+                        <a href="" class="footer-social__ico-link"><img src="/img/svg/viber.svg" alt="logo instagram" class="footer-social__ico"></a>
+                    </div>
+                    <!-- /.footer-social__links -->
+                </div>
+                <!-- /.footer-social -->
+            </div>
+            <!-- /.content-wrapper -->
         </div>
         <!-- /.container -->
     </div>
     <!-- /.footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/parallax.js"></script>
 </body>
 </html>

@@ -1,3 +1,94 @@
 .footer
+    display: flex
+    justify-content: center
     background-color: $main-gray
-    height: 500px
+    color: $main-white
+    &-title
+        font-family: Arial
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 20px
+        margin-bottom: 10px
+    &-logo
+        display: flex
+        flex-direction: row
+        align-items: center
+        &__img
+            width: 50px
+            height: 50px
+            margin-right: 10px
+            align-items: center
+        &__title
+            font-family: Cambria
+            font-style: normal
+            font-weight: normal
+            font-size: 28px
+            line-height: 33px
+    &-contacts
+        display: flex
+        flex-direction: column
+        &__description
+            font-family: Arial
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            margin-top: 0
+            margin-bottom: 8px
+        &__policy
+            font-family: Arial
+            font-style: italic
+            font-weight: normal
+            font-size: 14px
+            line-height: 100%
+            color: $main-white
+            text-decoration: none
+            padding-bottom: 1px
+            &:hover
+                border-bottom: 1px dashed $main-white
+                max-width: 221px
+    &-menu
+        display: flex
+        flex-direction: column
+        &__list
+            margin-top: 0
+            margin-bottom: 0
+            padding: 0
+            display: grid
+            grid-template-columns: 110px 1fr
+            grid-template-rows: repeat(3, 1fr)
+            list-style-type: none
+            &-link
+                color: $main-white
+                text-decoration: none
+                border-bottom: 2px solid $main-white
+                &:hover
+                    -webkit-transition: .3s ease-out
+                    color: $main-pink
+                    border-bottom: 2px solid $main-pink
+            &-element
+                margin-bottom: 10px
+    &-social
+        display: flex
+        flex-direction: column
+        &__links
+            display: flex
+            flex-direction: row
+        &__ico
+            width: 25px
+            height: 25px
+            &-link
+                margin-right: 20px
+.content-wrapper
+    display: grid
+    grid-template-columns: 280px 490px 230px 170px
+    grid-template-rows: 1fr
+.container
+    &-footer
+        display: flex
+        flex-direction: row
+        justify-content: center
+        padding-top: 30px
+        padding-bottom: 50px
+        width: 1180px
