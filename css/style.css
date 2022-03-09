@@ -639,8 +639,8 @@ template {
 .advantages__item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 280px 280px 280px;
-      grid-template-columns: 280px 280px 280px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
 }
 
@@ -657,7 +657,7 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 280px;
-  height: 194px;
+  height: 100%;
 }
 
 .component__img {
@@ -696,6 +696,7 @@ template {
   font-size: 14px;
   line-height: 15px;
   color: #121212;
+  margin-bottom: 0;
 }
 
 .catalog {
@@ -1362,9 +1363,6 @@ template {
   .special {
     display: none;
   }
-  .advantages {
-    display: none;
-  }
   .catalog {
     display: none;
   }
@@ -1448,33 +1446,51 @@ template {
     font-size: 16px;
     height: 51px;
   }
-}
-
-.button__main {
-  width: 211px;
-  height: 39px;
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.button .advantages {
-  display: none;
-}
-
-.button .catalog {
-  display: none;
-}
-
-.button .contacts {
-  display: none;
-}
-
-.button .feedback {
-  display: none;
-}
-
-.button .footer {
-  display: none;
+  .button__main {
+    width: 211px;
+    height: 39px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .advantages__item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .advantages__container {
+    border: 2px solid blue;
+    width: 720px;
+  }
+  .component {
+    border: 2px solid blue;
+  }
+  .component-header {
+    font-size: 18px;
+    line-height: 11px;
+  }
+  .component-description {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .text__h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .catalog {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .feedback {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1527,8 +1543,36 @@ template {
   .button__main {
     margin-top: 15px;
   }
-  .advantages {
-    display: none;
+  .advantages__container {
+    max-width: 576px;
+  }
+  .advantages__item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .advantages__container {
+    border: 2px solid blue;
+    width: 720px;
+  }
+  .component {
+    border: 2px solid blue;
+  }
+  .component-header {
+    font-size: 16px;
+    line-height: 11px;
+  }
+  .component-description {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .text__h2 {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: bold;
   }
   .catalog {
     display: none;

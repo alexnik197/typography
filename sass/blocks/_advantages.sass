@@ -3,16 +3,15 @@
     justify-content: center
     &__item
         display: grid
-        grid-template-columns: 280px 280px 280px
+        grid-template-columns: 1fr 1fr 1fr
         grid-column-gap: 20px
-
 .component
     padding-top: 5px
     display: flex
     align-items: center
     flex-direction: column
     width: 280px
-    height: 194px
+    height: 100%
     &__img
         margin-top: 0
         height: 58px
@@ -24,7 +23,6 @@
             width: 58px
         &-three
             width: 58px
-
     &-header
         margin-bottom: 10px
         font-style: normal
@@ -40,3 +38,4 @@
         font-size: 14px
         line-height: 15px
         color: $font-black
+        margin-bottom: 0

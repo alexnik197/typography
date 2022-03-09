@@ -1,8 +1,6 @@
 @media (max-width: 1200px)
     .special
         display: none
-    .advantages
-        display: none
     .catalog
         display: none
     .contacts
@@ -70,14 +68,31 @@
         &__description
             font-size: 16px
             height: 51px
-.button
-    &__main
-        width: 211px
-        height: 39px
-        font-size: 18px
-        line-height: 21px
+    .button
+        &__main
+            width: 211px
+            height: 39px
+            font-size: 18px
+            line-height: 21px
     .advantages
-        display: none
+        &__item
+            display: grid
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(3, 1fr)
+        &__container
+            border: 2px solid blue
+            width: 720px
+    .component
+        border: 2px solid blue
+        &-header
+            font-size: 18px
+            line-height: 11px
+        &-description
+            font-size: 14px
+            line-height: 15px
+    .text__h2
+        font-size: 28px
+        font-weight: bold
     .catalog
         display: none
     .contacts
@@ -127,7 +142,27 @@
     .button__main
         margin-top: 15px
     .advantages
-        display: none
+        &__container
+            max-width: 576px
+        &__item
+            display: grid
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(3, 1fr)
+        &__container
+            border: 2px solid blue
+            width: 720px
+    .component
+        border: 2px solid blue
+        &-header
+            font-size: 16px
+            line-height: 11px
+        &-description
+            font-size: 14px
+            line-height: 16px
+    .text__h2
+        font-size: 26px
+        line-height: 28px
+        font-weight: bold
     .catalog
         display: none
     .contacts
