@@ -2,7 +2,9 @@
     .special
         display: none
     .catalog
-        display: none
+        &__container
+            border: 2px solid blue
+            max-width: 960px
     .contacts
         display: none
     .feedback
@@ -78,12 +80,12 @@
         &__item
             display: grid
             grid-template-columns: 1fr
-            grid-template-rows: repeat(3, 1fr)
+            grid-template-rows: 1fr
+            grid-gap: 35px
         &__container
             border: 2px solid blue
             width: 720px
     .component
-        border: 2px solid blue
         &-header
             font-size: 18px
             line-height: 11px
@@ -94,7 +96,8 @@
         font-size: 28px
         font-weight: bold
     .catalog
-        display: none
+        &__container
+            max-width: 720px
     .contacts
         display: none
     .feedback
@@ -104,7 +107,7 @@
 @media (max-width: 768px)
     .header
         &-container
-            width: 576px
+            max-width: 576px
         &-list
             padding-left: 5px
             &__number
@@ -147,12 +150,11 @@
         &__item
             display: grid
             grid-template-columns: 1fr
-            grid-template-rows: repeat(3, 1fr)
+            grid-template-rows: 1fr
         &__container
             border: 2px solid blue
             width: 720px
     .component
-        border: 2px solid blue
         &-header
             font-size: 16px
             line-height: 11px
@@ -164,7 +166,22 @@
         line-height: 28px
         font-weight: bold
     .catalog
-        display: none
+        &__container
+            max-width: 576px
+        &-wrapper
+            &__one
+                grid-column-gap: 15px
+            &__two
+                grid-column-gap: 15px
+                grid-row-gap: 15px
+                grid-template-columns: 1fr 1fr
+                grid-template-rows: 1fr 1fr
+        &__button
+            padding: 5px 5px 5px 5px
+    .splide
+        &__img
+            width: 160px
+            height: 160px
     .contacts
         display: none
     .feedback
@@ -181,21 +198,21 @@
                 width: 104px
                 font-size: 12px
                 line-height: 14px
-                margin-left: 31px
+                margin-left: 45px
             &__el
                 display: none
     .logo
         &-image
             margin-right: 5px
         &-text
-            font-size: 11px
-            line-height: 13px
+            font-size: 14px
+            line-height: 15px
     .button
         &-modal
             display: none
     .menu-button
         padding: 0
-        margin-left: 48px
+        margin-left: 35px
         background-color: inherit
         border: none
         display: block
@@ -224,3 +241,42 @@
             line-height: 105%
     .button__main
         margin-top: 15px
+    .advantages
+        &__container
+            border: 2px solid blue
+            max-width: 320px
+        &__item
+            display: grid
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr
+    .component
+        &-header
+            font-size: 16px
+            line-height: 11px
+        &-description
+            font-size: 14px
+            line-height: 15px
+    .text__h2
+        text-align: center
+        font-size: 22px
+        line-height: 25px
+    .catalog
+        &__container
+            width: 320px
+        &-wrapper
+            &__one
+                display: none
+            &__two
+                display: none
+    .splide
+        &__list
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 0px
+            column-gap: 15px
+            margin-top: 0
+        &__img
+            width: 120px
+            height: 120px
+            &-last
+                display: none
