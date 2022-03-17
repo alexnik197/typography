@@ -3,12 +3,13 @@
         display: none
     .catalog
         &__container
-            border: 2px solid blue
             max-width: 960px
     .contacts
         display: none
     .feedback
-        display: none
+        &__container
+            border: 2px solid green
+            width: 960px
     .footer
         display: none
     .header
@@ -101,7 +102,9 @@
     .contacts
         display: none
     .feedback
-        display: none
+        &__container
+            border: 2px solid green
+            width: 720px
     .footer
         display: none
 @media (max-width: 768px)
@@ -185,9 +188,23 @@
     .contacts
         display: none
     .feedback
-        display: none
+        &__container
+            border: 2px solid green
+            width: 576px
     .footer
         display: none
+    .reviews
+        display: flex
+        justify-content: space-between
+        gap: 10px
+        &__container
+            margin-left: 0
+    .button
+        &__review
+            width: 211px
+            height: 39px
+            font-size: 18px
+            line-height: 21px
 @media (max-width: 576px)
     .header
         &-container
@@ -280,3 +297,18 @@
             height: 120px
             &-last
                 display: none
+        &__name
+            display: flex
+            justify-content: center
+            margin-bottom: 15px
+            font-size: 18px
+            font-weight: 600
+    .feedback
+        &__container
+            border: 2px solid green
+            width: 320px
+    .reviews
+        &__container
+            display: none
+            &--main
+                display: block

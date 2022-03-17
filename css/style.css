@@ -795,6 +795,32 @@ template {
           box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.25);
 }
 
+.splide__name {
+  display: none;
+}
+
+.splide__arrow-left {
+  position: absolute;
+  width: 5px;
+  height: 26px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.splide__arrow-right {
+  position: absolute;
+  width: 5px;
+  height: 26px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .feedback {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,6 +969,15 @@ template {
 
 .text__h2-review {
   margin-bottom: 10px;
+}
+
+.swiper {
+  width: 800px;
+  height: inherit;
+}
+
+.swiper-slide {
+  width: 200px;
 }
 
 .parallax-window {
@@ -1366,14 +1401,14 @@ template {
     display: none;
   }
   .catalog__container {
-    border: 2px solid blue;
     max-width: 960px;
   }
   .contacts {
     display: none;
   }
-  .feedback {
-    display: none;
+  .feedback__container {
+    border: 2px solid green;
+    width: 960px;
   }
   .footer {
     display: none;
@@ -1486,8 +1521,9 @@ template {
   .contacts {
     display: none;
   }
-  .feedback {
-    display: none;
+  .feedback__container {
+    border: 2px solid green;
+    width: 720px;
   }
   .footer {
     display: none;
@@ -1596,11 +1632,30 @@ template {
   .contacts {
     display: none;
   }
-  .feedback {
-    display: none;
+  .feedback__container {
+    border: 2px solid green;
+    width: 576px;
   }
   .footer {
     display: none;
+  }
+  .reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 10px;
+  }
+  .reviews__container {
+    margin-left: 0;
+  }
+  .button__review {
+    width: 211px;
+    height: 39px;
+    font-size: 18px;
+    line-height: 21px;
   }
 }
 
@@ -1732,5 +1787,26 @@ template {
   }
   .splide__img-last {
     display: none;
+  }
+  .splide__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .feedback__container {
+    border: 2px solid green;
+    width: 320px;
+  }
+  .reviews__container {
+    display: none;
+  }
+  .reviews__container--main {
+    display: block;
   }
 }
