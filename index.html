@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>ИнфоКемерово</title>
 </head>
@@ -119,10 +119,8 @@
                 <h3 class="text__h3">Оставьте ваше впечатление</h3>
             </div>
             <!-- .feedback__header -->
-            <div class="swiper">
-                <div class="swiper-button-prev"></div>
-                <div class="reviews swiper-wrapper">
-                    <div class="reviews__container swiper-slide">
+                <div class="reviews">
+                    <div class="reviews__container">
                         <div class="container-wrapper">
                             <img src="../img/stars.svg" alt="stars" width="125px">
                             <p class="reviews__container-description">Обращался за печатью визиток и изготовлением подарочных коробов. Все сделали качественно с первого раза и сроки не сорвали. Плюс очень помогли с доставкой на нужный мне адрес. Типографию рекомендую!</p>
@@ -133,7 +131,7 @@
                         </div>
                     </div>
                         <!-- .reviews__container-one -->
-                    <div class="reviews__container reviews__container--main  swiper-slide">
+                    <div class="reviews__container">
                         <div class="container-wrapper">
                             <img src="../img/stars.svg" alt="stars" width="125px">
                             <p class="reviews__container-description">Здравствуйте! Делал переплет проектов, понравилось качество и подход. Переплетали около 400 книг. Компания производила самовывоз напечатанных проектов и обратную доставку. Качество очень достойное, а цены радуют. Впредь всегда буду обращаться именно к вам. </p>
@@ -144,7 +142,7 @@
                         </div>
                     </div>
                         <!-- .reviews__container-one -->
-                    <div class="reviews__container  swiper-slide">
+                    <div class="reviews__container">
                         <div class="container-wrapper">
                             <img src="../img/stars.svg" alt="stars" width="125px">
                             <p class="reviews__container-description">Заказывали большой объем удостоверений! Сделано было быстро и качественно, рекомендую.</p>
@@ -156,10 +154,56 @@
                     </div>
                     <!-- .reviews__container-one -->
                 </div>
-                <!-- .reviews swiper-wrapper-->   
-                <div class="swiper-button-next"></div>          
-            </div>
-            <!-- /.swiper -->
+                <!-- .reviews-->  
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper__container">
+                                <div class="container-wrapper">
+                                    <img src="../img/stars.svg" alt="stars" width="125px">
+                                    <p class="reviews__container-description">Обращался за печатью визиток и изготовлением подарочных коробов. Все сделали качественно с первого раза и сроки не сорвали. Плюс очень помогли с доставкой на нужный мне адрес. Типографию рекомендую!</p>
+                                </div>
+                                <div class="container__name">
+                                    <hr class="horizontal-line">
+                                    <span class="reviews__name">Алексей</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide1 -->
+                        <div class="swiper-slide">
+                            <div class="swiper__container">
+                                <div class="container-wrapper">
+                                    <img src="../img/stars.svg" alt="stars" width="125px">
+                                    <p class="reviews__container-description">Здравствуйте! Делал переплет проектов, понравилось качество и подход. Переплетали около 400 книг. Компания производила самовывоз напечатанных проектов и обратную доставку. Качество очень достойное, а цены радуют. Впредь всегда буду обращаться именно к вам. </p>
+                                </div>
+                                <div class="container__name">
+                                    <hr class="horizontal-line">
+                                    <span class="reviews__name">Евгений</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide2 -->
+                        <div class="swiper-slide">
+                            <div class="swiper__container">
+                                <div class="container-wrapper">
+                                    <img src="../img/stars.svg" alt="stars" width="125px">
+                                    <p class="reviews__container-description">Заказывали большой объем удостоверений! Сделано было быстро и качественно, рекомендую.</p>
+                                </div>
+                                <div class="container__name">
+                                    <hr class="horizontal-line">
+                                    <span class="reviews__name">Слава</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide3 -->
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- swiper --> 
             <div class="button__review">Оставить отзыв</div>
         </div>
         <!-- .container feedback-container -->
