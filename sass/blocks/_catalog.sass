@@ -5,14 +5,13 @@
     align-items: center
     &-wrapper
         &__one
-            display: grid
-            grid-auto-flow: column
-            grid-column-gap: 27px
+            display: flex
+            grid-gap: 27px
             margin-bottom: 15px
         &__two
-            display: grid
-            grid-auto-flow: column
-            grid-column-gap: 27px
+            display: flex
+            grid-gap: 27px
+            margin-bottom: 35px
     &__button
         color: $main-gray
         background: none
@@ -28,14 +27,6 @@
             transition: all 0.5s ease
             color: $main-white
             border-color: transparent
-        &-one
-            width: 141px
-        &-two
-            width: 135px
-        &-three
-            width: 161px
-        &-four
-            width: 165px
 
 .splide
     &__list
@@ -43,8 +34,10 @@
         display: flex
         flex-direction: row
         gap: 20px
-        margin-top: 35px
+        margin-top: 0px
         margin-bottom: 0
+        &--hide
+            display: none
     &__slide
         list-style-type: none
     &__img
