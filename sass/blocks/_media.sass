@@ -2,11 +2,8 @@
     .catalog
         &__container
             max-width: 960px
-    .contacts
-        display: none
     .feedback
         &__container
-            border: 2px solid green
             width: 960px
     .footer
         display: none
@@ -19,7 +16,6 @@
                 font-size: 16px
                 margin-left: 20px
         &-container
-            border: 2px solid red
             max-width: 960px
     .container
         &-about
@@ -27,7 +23,6 @@
 @media (max-width: 992px)
     .header
         &-container
-            border: 2px solid blue
             max-width: 720px
         &-list
             padding-left: 0
@@ -59,7 +54,6 @@
             line-height: 16px
     .container-about
         max-width: 720px
-        border: 2px solid blue
     .text__h1
         font-size: 42px
     .text__h2-pink
@@ -82,7 +76,6 @@
             grid-template-rows: 1fr
             grid-gap: 35px
         &__container
-            border: 2px solid blue
             width: 720px
     .component
         &-header
@@ -113,7 +106,6 @@
                 flex-basis: 50%
     .feedback
         &__container
-            border: 2px solid green
             width: 720px
     .special
         .sp-text
@@ -139,7 +131,14 @@
                 font-size: 22px
                 line-height: 25px
     .contacts
-        display: none
+        &-container
+            width: 720px
+        &__wrapper
+            width: 720px
+        &__map
+            &-size
+                width: 680px
+                height: 253px
     .footer
         display: none
 @media (max-width: 768px)
@@ -190,7 +189,6 @@
             grid-template-columns: 1fr
             grid-template-rows: 1fr
         &__container
-            border: 2px solid blue
             width: 720px
     .component
         &-header
@@ -234,10 +232,16 @@
             &-two
                 margin-top: 0
     .contacts
-        display: none
+        &-container
+            width: 576px
+        &__wrapper
+            width: 576px
+        &__map
+            &-size
+                width: 540px
+                height: 201px
     .feedback
         &__container
-            border: 2px solid green
             width: 576px
     .footer
         display: none
@@ -247,6 +251,7 @@
         gap: 10px
         &__container
             margin-left: 0
+
     .button
         &__review
             width: 211px
@@ -308,7 +313,6 @@
         margin-top: 15px
     .advantages
         &__container
-            border: 2px solid blue
             max-width: 320px
         &__item
             display: grid
@@ -367,7 +371,6 @@
             font-weight: 600
     .feedback
         &__container
-            border: 2px solid green
             width: 320px
     .swiper
         display: block
@@ -403,3 +406,25 @@
                     font-weight: 700
                     font-size: 18px
                     line-height: 21px
+    .contacts
+        &__header
+            font-weight: 400
+            font-size: 18px
+            line-height: 21px
+        &__description
+            font-style: italic
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+        &-container
+            width: 320px
+        &__wrapper
+            width: 320px
+        &__map
+            &-size
+                width: 310px
+                height: 200px
+        &__item
+            flex-direction: column
+            align-items: center
+            gap: 30px
