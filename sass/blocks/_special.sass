@@ -38,11 +38,15 @@
         width: 654px
         font-style: regular
         font-weight: 300
-        font-size: 18px
-        line-height: 105%
+        font-size: 22px
+        line-height: 20px
         color: $main-white
-        margin-top: 0
-        margin-bottom: 25px
+        &-up
+            margin-top: 0px
+            margin-bottom: 0px
+        &-down
+            margin-top: 3px
+            margin-bottom: 25px
 .sp-text
     &__h1
         color: $main-white
@@ -62,13 +66,6 @@
         line-height: 41px
 .container-img
     position: absolute
-.container-header
-    padding-top: 30px
-    padding-bottom: 50px
-    width: 1180px
-    display: flex
-    flex-direction: column
-    justify-content: center
 .button
     &__main
         &-two
@@ -79,9 +76,9 @@
             border: none
             border-radius: 10px
             font-style: normal
-            font-weight: 600
-            font-size: 24px
-            line-height: 28px
+            font-weight: 700
+            font-size: 22px
+            line-height: 25px
             &:hover
                 transition: all 1.0s ease
                 border: 1px solid $main-white

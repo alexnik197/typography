@@ -1,6 +1,4 @@
 @media (max-width: 1200px)
-    .special
-        display: none
     .catalog
         &__container
             max-width: 960px
@@ -113,12 +111,35 @@
                 flex-basis: 50%
             &--9
                 flex-basis: 50%
-    .contacts
-        display: none
     .feedback
         &__container
             border: 2px solid green
             width: 720px
+    .special
+        .sp-text
+            &__h1
+                margin-bottom: 7px
+                font-size: 36px
+                line-height: 41px
+            &__h2-pink
+                margin-bottom: 10px
+                font-size: 24px
+                line-height: 28px
+        &__description
+            margin-top: 0px
+            &-down
+                margin-bottom: 20px
+    .button
+        &__main
+            &-two
+                width: 293px
+                height: 35px
+                font-style: normal
+                font-weight: 700
+                font-size: 22px
+                line-height: 25px
+    .contacts
+        display: none
     .footer
         display: none
 @media (max-width: 768px)
@@ -199,6 +220,19 @@
         &__img
             width: 160px
             height: 160px
+    .special
+        &-information
+            &__text
+                width: 576px
+        &__description
+            &-up
+                width: 576px
+            &-down
+                width: 576px
+    .button
+        &__main
+            &-two
+                margin-top: 0
     .contacts
         display: none
     .feedback
@@ -339,3 +373,33 @@
         display: block
     .reviews
         display: none
+    .special
+        &-information
+            &__text
+                width: 320px
+        &__description
+            font-weight: 400
+            font-size: 16px
+            line-height: 20px
+            &-up
+                width: 320px
+            &-down
+                width: 320px
+        .sp-text
+            &__h1
+                font-weight: 700
+                font-size: 22px
+                line-height: 25px
+            &__h2-pink
+                font-weight: 700
+                font-size: 18px
+                line-height: 21px
+        .button
+            &__main
+                &-two
+                    margin-top: 0
+                    width: 242px
+                    height: 30px
+                    font-weight: 700
+                    font-size: 18px
+                    line-height: 21px
