@@ -3,6 +3,13 @@
     justify-content: center
     background-color: $main-gray
     color: $main-white
+    &-container
+        padding-top: 30px
+        padding-bottom: 50px
+        display: grid
+        width: 1180px
+        grid-template-columns: 280px 490px 230px 170px
+        grid-template-rows: 1fr
     &-title
         font-family: Arial
         font-style: normal
@@ -75,20 +82,7 @@
         &__links
             display: flex
             flex-direction: row
+            gap: 20px
         &__ico
             width: 25px
             height: 25px
-            &-link
-                margin-right: 20px
-.content-wrapper
-    display: grid
-    grid-template-columns: 280px 490px 230px 170px
-    grid-template-rows: 1fr
-.container
-    &-footer
-        display: flex
-        flex-direction: row
-        justify-content: center
-        padding-top: 30px
-        padding-bottom: 50px
-        width: 1180px
