@@ -9,6 +9,25 @@
     <title>ИнфоКемерово</title>
 </head>
 <body>
+    <div class="modal">
+        <div class="modal-wrapper">
+            <div class="modal-form">
+                <span class="modal-form__title">Заказать звонок</span>
+                <form class="modal-form__data" action="#">
+                    <img class="modal-form__data-close" src="/img/svg/modal-close.svg" alt="close">
+                    <input class="modal-form__data-input" for="text" placeholder="Имя"></input>
+                    <input class="modal-form__data-input" for="tel" placeholder="Номер телефона"></input>
+                    <input class="modal-form__data-input" for="email" placeholder="Почта"></input>
+                    <input class="modal-form__data-input modal-form__data-input--last" for="text" placeholder="Сообщение"></input>
+                    <div class="modal-form__btn">
+                        <button class="modal-form__btn--send">Отправить</button>
+                        <button class="modal-form__btn--reset">Сброс</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
     <header class="header">
             <div class="container header-container">
                 <a href="#" class="logo-header">
@@ -351,6 +370,7 @@
     </div>
     <!-- /.footer -->
     <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/modal.js"></script>
     <script src="/js/catalog.js"></script>
     <script src="/js/parallax.js"></script>
     <script src="/js/swiper-bundle.min.js"></script>
