@@ -36,9 +36,9 @@
                 </a>
                 <ul class="header-list">
                     <li class="header-list__number">+7 (913) 308-20-24</li>
-                    <li><a href="" class="header-list__el">Почему мы</a></li>
-                    <li><a href="" class="header-list__el">Отзывы</a></li>
-                    <li><a href="" class="header-list__el">Контакты</a></li>
+                    <li><a href="#advantages" class="header-list__el">Почему мы</a></li>
+                    <li><a href="#reviews" class="header-list__el">Отзывы</a></li>
+                    <li><a href="#contacts" class="header-list__el">Контакты</a></li>
                 </ul>
                 <button class="button button-modal">Перезвоните мне</button>
                 <button class="menu-button"><a href="#" class="menu-button__link"><img src="/img/svg/burger.svg" alt="menu button"></a></button>
@@ -46,6 +46,16 @@
             <!-- /.header-container -->
     </header>
     <!-- /.header -->
+    <div class="burger">
+        <img class="burger-close" src="/img/svg/burger-close.svg" alt="close">
+        <ul class="burger-list">
+            <li><a href="#advantages" class="burger-list__el">Почему мы</a></li>
+            <li><a href="#reviews" class="burger-list__el">Отзывы</a></li>
+            <li><a href="#contacts" class="burger-list__el">Контакты</a></li>
+            <button class="button button-burger">Перезвоните мне</button>
+        </ul>
+    </div>
+    <!-- /.burger -->
     <div class="about">
         <image class="about__img-background" src="img/about__background.png">
             <div class="container-about container-img">
@@ -65,7 +75,7 @@
         </image>
     </div>
     <!-- /.about -->
-    <div class="advantages">
+    <div class="advantages" id="advantages">
         <div class="container advantages__container">
             <h2 class="text__h2">Качество, подтвержденное временем</h2>
                 <div class="advantages__item">
@@ -97,7 +107,7 @@
         <!-- /.container -->
     </div>
     <!-- /.advantages -->
-    <div class="catalog">
+    <div class="catalog" id="catalog">
         <div class="container catalog__container">
             <h2 class="text__h2">Продукция и услуги</h2>
             <div class="catalog-wrapper__one">
@@ -176,7 +186,7 @@
         <!-- /.container -->
     </div>
     <!-- /.catalog -->
-    <div class="feedback">
+    <div class="feedback" id="reviews">
         <div class="container feedback__container">
             <div class="feedback__header">
                 <img class="pseudo-element" src="../img/pseudo-el.svg" alt="header img">
@@ -274,7 +284,7 @@
         <!-- .container feedback-container -->
     </div>
     <!-- .feedback -->
-    <div class="special">
+    <div class="special" id="special">
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/special-background.jpg">
             <div class="special-information">
                 <div class="special-information__text">
@@ -291,7 +301,7 @@
         <!-- .parallax-window -->
     </div>
     <!-- .special -->
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <div class="contacts-container">
             <span class="text__h2">Наши контакты</span>
             <div class="contacts__wrapper">
@@ -347,11 +357,11 @@
                 <span class="footer-title">Меню сайта</span>
                 <ul class="footer-menu__list">
                     <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">Главная</a></li>
-                    <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">Отзывы</a></li>
-                    <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">О компании</a></li>
-                    <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">Акция</a></li>
-                    <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">Каталог</a></li>
-                    <li class="footer-menu__list-element"><a href="#" class="footer-menu__list-link">Контакты</a></li>
+                    <li class="footer-menu__list-element"><a href="#reviews" class="footer-menu__list-link">Отзывы</a></li>
+                    <li class="footer-menu__list-element"><a href="#advantages" class="footer-menu__list-link">О компании</a></li>
+                    <li class="footer-menu__list-element"><a href="#special" class="footer-menu__list-link">Акция</a></li>
+                    <li class="footer-menu__list-element"><a href="#catalog" class="footer-menu__list-link">Каталог</a></li>
+                    <li class="footer-menu__list-element"><a href="#contacts" class="footer-menu__list-link">Контакты</a></li>
                 </ul>
             </div>
             <!-- /.footer-menu -->

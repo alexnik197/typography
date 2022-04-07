@@ -448,7 +448,8 @@ template {
 .modal-form {
   position: relative;
   width: 400px;
-  height: 543px;
+  padding-top: 50px;
+  padding-bottom: 80px;
   background: #323232;
   border-radius: 25px;
   display: -webkit-box;
@@ -464,7 +465,7 @@ template {
 }
 
 .modal-form__title {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 30px;
   font-family: 'Arial';
   font-style: normal;
@@ -558,6 +559,65 @@ template {
 
 .modal-form__btn--reset:hover {
   border: 2px solid #121212;
+}
+
+.burger {
+  padding-top: 47px;
+  position: absolute;
+  display: none;
+  z-index: 150;
+  height: 205px;
+  background-color: #fff;
+}
+
+.burger--active {
+  display: block;
+}
+
+.burger-list {
+  gap: 10px;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.burger-list__el {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.burger-close {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+}
+
+.button-burger {
+  width: 176px;
+  height: 28px;
+  border-radius: 7px;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 21px;
+  background-color: #323232;
+  color: #F5F5F5;
+  text-decoration: none;
 }
 
 .header {
@@ -1891,6 +1951,43 @@ template {
 }
 
 @media (max-width: 576px) {
+  .modal-form {
+    padding-bottom: 70px;
+    max-width: 310px;
+  }
+  .modal-form__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .modal-form__data {
+    gap: 10px;
+  }
+  .modal-form__data-input {
+    width: 270px;
+  }
+  .modal-form__data-input--last {
+    top: 13px;
+    height: 120px;
+  }
+  .modal-form__btn {
+    margin-top: 10px;
+    width: 270px;
+  }
+  .modal-form__btn--send {
+    height: 40px;
+    width: 170px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .modal-form__btn--reset {
+    height: 40px;
+    width: 140px;
+    left: 130px;
+    font-size: 16px;
+    line-height: 18px;
+  }
   .header-container {
     max-width: 320px;
   }

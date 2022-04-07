@@ -1,0 +1,41 @@
+.burger
+    padding-top: 47px
+    position: absolute
+    display: none
+    z-index: 150
+    height: 205px
+    background-color: #fff
+    &--active
+        display: block
+    &-list
+        gap: 10px
+        margin: 0
+        width: 100vw
+        height: 100vh
+        display: flex
+        flex-direction: column
+        align-items: center
+        list-style-type: none
+        &__el
+            text-decoration: none
+            color: inherit
+            font-weight: normal
+            font-size: 16px
+            line-height: 18px
+    &-close
+        position: absolute
+        cursor: pointer
+        top: 20px
+        right: 20px
+.button
+    &-burger
+        width: 176px
+        height: 28px
+        border-radius: 7px
+        border: none
+        font-style: normal
+        font-weight: bold
+        line-height: 21px
+        background-color: $main-gray
+        color: $main-white
+        text-decoration: none
