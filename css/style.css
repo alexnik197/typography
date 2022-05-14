@@ -424,7 +424,7 @@ template {
   z-index: 200;
 }
 
-.modal--active {
+.modal-open {
   display: block;
 }
 
@@ -1010,6 +1010,14 @@ template {
           transform: translateY(-50%);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.button-active {
+  background: #FF005C;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #F5F5F5;
+  border-color: transparent;
 }
 
 .feedback {

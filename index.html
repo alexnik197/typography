@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>ИнфоКемерово</title>
 </head>
@@ -14,7 +14,7 @@
             <div class="modal-form">
                 <span class="modal-form__title">Заказать звонок</span>
                 <form class="modal-form__data" action="#">
-                    <img class="modal-form__data-close" src="img/svg/modal-close.svg" alt="close">
+                    <img class="modal-form__data-close" src="img/svg/modal-close.svg" id="modal-close" alt="close">
                     <input class="modal-form__data-input" for="text" placeholder="Имя"></input>
                     <input class="modal-form__data-input" for="tel" placeholder="Номер телефона"></input>
                     <input class="modal-form__data-input" for="email" placeholder="Почта"></input>
@@ -40,8 +40,8 @@
                     <li><a href="#reviews" class="header-list__el">Отзывы</a></li>
                     <li><a href="#contacts" class="header-list__el">Контакты</a></li>
                 </ul>
-                <button class="button button-modal">Перезвоните мне</button>
-                <button class="menu-button"><a href="#" class="menu-button__link"><img src="img/svg/burger.svg" alt="menu button"></a></button>
+                <button class="button button-modal modal-call">Перезвоните мне</button>
+                <button class="menu-button modal-call"><a href="#" class="menu-button__link"><img src="img/svg/burger.svg" alt="menu button"></a></button>
             </div>
             <!-- /.header-container -->
     </header>
@@ -68,7 +68,7 @@
                                         и послепечатной обработке полиграфической продукции</p>
                         </div>
                                 <!-- /.about-information__text -->
-                        <button class="button button__main">Узнать подробнее</button>
+                        <button class="button button__main modal-call">Узнать подробнее</button>
                     </div>
                     <!-- /.about-information -->
             </div>
@@ -111,70 +111,70 @@
         <div class="container catalog__container">
             <h2 class="text__h2">Продукция и услуги</h2>
             <div class="catalog-wrapper__one">
-                <button class="button catalog__button button catalog__button--1">Удостоверения</button>
-                <button class="button catalog__button button catalog__button--2">Переплетные работы</button>
-                <button class="button catalog__button button catalog__button--3">Архивные короба</button>
-                <button class="button catalog__button button catalog__button--4">Адресные папки</button>
-                <button class="button catalog__button button catalog__button--5">Художественные книги</button>
+                <button class="button catalog__button button-active" id="btn1">Удостоверения</button>
+                <button class="button catalog__button" id="btn2">Переплетные работы</button>
+                <button class="button catalog__button" id="btn3">Архивные короба</button>
+                <button class="button catalog__button" id="btn4">Адресные папки</button>
+                <button class="button catalog__button" id="btn5">Художественные книги</button>
             </div>
             <!-- /.catalog__wrapper -->
             <div class="catalog-wrapper__two">
-                <button class="button catalog__button button catalog__button--6">Тиснение <br> и брендирование</button>
-                <button class="button catalog__button button catalog__button--7">Амбарные книги <br> и журналы</button>
-                <button class="button catalog__button button catalog__button--8">Папки для хранения документов</button>
-                <button class="button catalog__button button catalog__button--9">Сувенирные коробки <br> и футляры</button>
+                <button class="button catalog__button" id="btn6">Тиснение <br> и брендирование</button>
+                <button class="button catalog__button" id="btn7">Амбарные книги <br> и журналы</button>
+                <button class="button catalog__button" id="btn8">Папки для хранения документов</button>
+                <button class="button catalog__button" id="btn9">Сувенирные коробки <br> и футляры</button>
             </div>
             <!-- /.catalog-wrapper__2 -->
             <div class="splide">
-                <ul class="splide__list splide__list--1">
+                <ul class="splide__list" id="splide1">
                     <li class="splide__slide"><img class="splide__img" src="img/slider/sl1-1.jpg" alt="slider1"></li>
                     <li class="splide__slide"><img class="splide__img" src="img/slider/sl1-2.jpg" alt="slider2"></li>
                     <li class="splide__slide"><img class="splide__img splide__img-last" src="img/slider/sl1-3.jpg" alt="slider3"></li>
                 </ul>
                 <!-- splide 1 -->
-                <ul class="splide__list splide__list--2 splide__list--hide">
+                <ul class="splide__list splide__list--hide" id="splide2">
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider2.jpg" alt="slider4"></li>
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider1.jpg" alt="slider5"></li>
                     <li class="splide__slide"><img class="splide__img splide__img-last" src="img/slider/slider3.jpg" alt="slider6"></li>
                 </ul>
                 <!-- splide 2 -->
-                <ul class="splide__list splide__list--3 splide__list--hide">
+                <ul class="splide__list splide__list--hide" id="splide3">
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider3.jpg" alt="slider2"></li>
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider2.jpg" alt="slider1"></li>
                     <li class="splide__slide"><img class="splide__img splide__img-last" src="img/slider/slider1.jpg" alt="slider3"></li>
                 </ul>
                 <!-- splide 3 -->
-                <ul class="splide__list splide__list--4 splide__list--hide">
+                <ul class="splide__list splide__list--hide" id="splide4">
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider3.jpg" alt="slider2"></li>
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider2.jpg" alt="slider1"></li>
                     <li class="splide__slide"><img class="splide__img splide__img-last" src="img/slider/slider1.jpg" alt="slider3"></li>
                 </ul>
                 <!-- splide 4 -->
-                <ul class="splide__list splide__list--5 splide__list--hide">
+                <ul class="splide__list splide__list--hide" id="splide5">
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider3.jpg" alt="slider2"></li>
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider2.jpg" alt="slider1"></li>
                     <li class="splide__slide"><img class="splide__img splide__img-last" src="img/slider/slider1.jpg" alt="slider3"></li>
                 </ul>
                 <!-- splide 5 -->
-                <ul class="splide__list splide__list--6 splide__list--hide">
+                <ul class="splide__list splide__list--hide" id="splide6">
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider3.jpg" alt="slider2"></li>
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider2.jpg" alt="slider1"></li>
                     <li class="splide__slide"><img class="splide__img splide__img-last" src="img/slider/slider1.jpg" alt="slider3"></li>
                 </ul>
                 <!-- splide 6 -->
-                <ul class="splide__list splide__list--7 splide__list--hide">
+                <ul class="splide__list splide__list--hide" id="splide7">
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider3.jpg" alt="slider2"></li>
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider2.jpg" alt="slider1"></li>
                     <li class="splide__slide"><img class="splide__img splide__img-last" src="img/slider/slider1.jpg" alt="slider3"></li>
                 </ul>
                 <!-- splide 7 -->
-                <ul class="splide__list splide__list--8 splide__list--hide">
+                <ul class="splide__list splide__list--hide" id="splide8">
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider3.jpg" alt="slider2"></li>
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider2.jpg" alt="slider1"></li>
                     <li class="splide__slide"><img class="splide__img splide__img-last" src="img/slider/slider1.jpg" alt="slider3"></li>
                 </ul>
                 <!-- splide 8 -->
-                <ul class="splide__list splide__list--9 splide__list--hide">
+                <ul class="splide__list splide__list--hide" id="splide9">
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider3.jpg" alt="slider2"></li>
                     <li class="splide__slide"><img class="splide__img" src="img/slider/slider2.jpg" alt="slider1"></li>
                     <li class="splide__slide"><img class="splide__img splide__img-last" src="img/slider/slider1.jpg" alt="slider3"></li>
@@ -379,7 +379,7 @@
         <!-- /.container-footer -->
     </div>
     <!-- /.footer -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <script src="js/modal.js"></script>
     <script src="js/catalog.js"></script>
     <script src="js/parallax.js"></script>
@@ -389,7 +389,10 @@
 </html>
 
 
-<!-- Убрать слеш перед путём к файлу -->
+<!-- DONE
+    Убрать слеш перед путём к файлу 
+-->
+
 <!-- Переписать Jquery на JS -->
 <!-- Сделать отправку формы на почту -->
 <!-- Добавить фотографии -->
