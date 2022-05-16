@@ -15,9 +15,15 @@ $title = "ИНФОКемерово: новое сообщение";
 $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
+<<<<<<< HEAD
 <b>Номер телефона:</b> $phone<br>
 <b>Почта:</b> $email<br><br>
 <b>Сообщение:</b><br>$message
+=======
+<b>Сообщение:</b><br>$message
+<b>Номер телефона:</b> $phone<br><br>
+<b>Почта:</b> $email<br><br>
+>>>>>>> 5378a9bd640b99bfa7ec099502a8a7f9eaefbfb0
 ";
 
 // Настройки PHPMailer
@@ -26,7 +32,11 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
+<<<<<<< HEAD
     $mail->SMTPDebug = 2;
+=======
+    //$mail->SMTPDebug = 2;
+>>>>>>> 5378a9bd640b99bfa7ec099502a8a7f9eaefbfb0
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
