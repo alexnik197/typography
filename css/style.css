@@ -1171,7 +1171,7 @@ template {
 }
 
 .special {
-  background-image: url(img/special-background.jpg);
+  background-image: url(../img/special-background.jpg);
   position: relative;
   padding: 30px 0px 50px 0px;
   display: -webkit-box;
