@@ -1463,7 +1463,7 @@ template {
 
 .footer-container {
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   display: -ms-grid;
   display: grid;
   width: 1180px;
